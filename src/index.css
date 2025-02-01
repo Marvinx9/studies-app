@@ -5,9 +5,8 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -20,7 +19,9 @@ menu,
 nav,
 section {
   display: block;
-  justify-content: baseline;
+}
+body {
+  line-height: 1;
 }
 ol,
 ul {
@@ -58,24 +59,22 @@ button {
   color: inherit;
 }
 
-/* body {
+@import url("https://fonts.googleapis.com/css2?family=Manjari&display=swap");
+
+body {
   display: flex;
   justify-content: center;
   font-family: "Manjari", sans-serif;
   color: #f0f0f0;
-  background-color: white;
+  background-color: #052b64;
+  height: 100%;
   width: 100%;
+  padding: 16px;
   box-sizing: border-box;
-} */
+}
 
 #root {
-  display: flex;
-  justify-content: center;
-  font-family: "Manjari", sans-serif;
-  color: #f0f0f0;
-  background-color: white;
   width: 100%;
-  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -87,7 +86,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  /* border-radius: 4px; */
+  border-radius: 4px;
   background: #888;
 }
 

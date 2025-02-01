@@ -1,5 +1,6 @@
 .listaTarefas {
   grid-area: tarefas;
+  height: 100%;
 
   h2 {
     font-size: 1.25rem;
@@ -8,6 +9,8 @@
 
   ul {
     max-height: 350px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
   }
 
   @media screen and (min-width: 1280px) {
@@ -19,12 +22,13 @@
 
     ul {
       overflow: auto;
+      max-height: 500px;
     }
   }
 }
 
 .item {
-  background-color: #292891;
+  background-color: #033d94;
   border-radius: 8px;
   box-shadow: 2px 4px 4px #0000009f;
   padding: 12px;
