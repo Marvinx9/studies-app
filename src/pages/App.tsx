@@ -23,7 +23,7 @@ export function App() {
     <>
       <div className={style.AppStyle}>
         <Form setTarefas={setTarefas} />
-        <Cronometro />
+        <Cronometro selecionado={selecionado} />
         <List tarefas={tarefas} selecionaTarefa={selecionaTarefa} />
       </div>
     </>
